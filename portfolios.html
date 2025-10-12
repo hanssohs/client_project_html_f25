@@ -1,96 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolios - UMSI Career Development</title>
+    <!-- ADDED: CSS LINK FOR RESET STYLESHEET -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <!-- ADDED: CSS LINK FOR MAIN STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <a href="#main">Skip to Main Content</a>
+        <!-- ADDED: SKIP LINK WRAPPED IN DIV WITH CLASS "skip" -->
+        <div class="skip">
+            <a href="#main">Skip to Main Content</a>
+        </div>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resumes</a></li>
                 <li><a href="networking.html">Networking & Connections</a></li>
-                <li><a href="portfolios.html">Portfolios</a></li>
+                <li><a href="portfolios.html" class="current">Portfolios</a></li>
             </ul>
         </nav>
         <h1>Portfolio Development</h1>
     </header>
 
+    <!-- ADDED: id="main" FOR SKIP LINK FUNCTIONALITY -->
     <main id="main">
         <section>
             <h2>Showcase Your Work with a Professional Portfolio</h2>
             <p>
-                A well-crafted portfolio is essential for UMSI students and graduates. It's your opportunity to demonstrate your skills, creativity, and impact through real examples of your work. Whether you're pursuing UX design, data science, information analysis, or any other SI field, a portfolio helps employers understand what you can do beyond what's listed on your resume.
+                A well-crafted portfolio is essential for UMSI students and graduates. It's your opportunity to
+                demonstrate your skills, creativity, and impact through real examples of your work. Whether you're
+                pursuing UX design, data science, information analysis, or any other SI field, a portfolio helps
+                employers understand what you can do beyond what's listed on your resume.
             </p>
             <p>
-                Your portfolio should tell the story of your professional growth, showcase your best work, and highlight the skills most relevant to your target roles. This page will guide you through creating a portfolio that stands out to employers and effectively communicates your value as a candidate.
+                Your portfolio should tell the story of your professional growth, showcase your best work, and highlight
+                the skills most relevant to your target roles. This page will guide you through creating a portfolio
+                that stands out to employers and effectively communicates your value as a candidate.
             </p>
         </section>
 
         <section>
             <h2>Why You Need a Portfolio</h2>
             <ul>
-                <li><strong>Show, Don't Just Tell:</strong> Demonstrate your actual skills and capabilities through concrete examples</li>
-                <li><strong>Stand Out from Competition:</strong> Differentiate yourself from other candidates with similar qualifications</li>
-                <li><strong>Tell Your Story:</strong> Provide context for your experiences and show your thought process</li>
-                <li><strong>Demonstrate Growth:</strong> Show how you've developed and improved your skills over time</li>
-                <li><strong>Industry Expectation:</strong> Many employers in information and technology fields expect to see portfolios</li>
+                <li><strong>Show, Don't Just Tell:</strong> Demonstrate your actual skills and capabilities through
+                    concrete examples</li>
+                <li><strong>Stand Out from Competition:</strong> Differentiate yourself from other candidates with
+                    similar qualifications</li>
+                <li><strong>Tell Your Story:</strong> Provide context for your experiences and show your thought process
+                </li>
+                <li><strong>Demonstrate Growth:</strong> Show how you've developed and improved your skills over time
+                </li>
+                <li><strong>Industry Expectation:</strong> Many employers in information and technology fields expect to
+                    see portfolios</li>
             </ul>
         </section>
 
         <section>
             <h2>Types of Portfolios for UMSI Students</h2>
-            <h3>UX/UI Design Portfolio</h3>
-            <ul>
-                <li>User research studies and findings</li>
-                <li>Wireframes and prototypes</li>
-                <li>Design process documentation</li>
-                <li>Before and after design iterations</li>
-                <li>Usability testing results</li>
-            </ul>
+            <div class="portfolio-types-grid">
+                <div>
+                    <h3>UX/UI Design Portfolio</h3>
+                    <ul>
+                        <li>User research studies and findings</li>
+                        <li>Wireframes and prototypes</li>
+                        <li>Design process documentation</li>
+                        <li>Before and after design iterations</li>
+                        <li>Usability testing results</li>
+                    </ul>
+                </div>
 
-            <h3>Data Science Portfolio</h3>
-            <ul>
-                <li>Data analysis projects with clear methodologies</li>
-                <li>Data visualizations and dashboards</li>
-                <li>Machine learning models and results</li>
-                <li>Code samples and GitHub repositories</li>
-                <li>Statistical analysis and insights</li>
-            </ul>
+                <div>
+                    <h3>Data Science Portfolio</h3>
+                    <ul>
+                        <li>Data analysis projects with clear methodologies</li>
+                        <li>Data visualizations and dashboards</li>
+                        <li>Machine learning models and results</li>
+                        <li>Code samples and GitHub repositories</li>
+                        <li>Statistical analysis and insights</li>
+                    </ul>
+                </div>
 
-            <h3>Information Analysis Portfolio</h3>
-            <ul>
-                <li>Research projects and methodologies</li>
-                <li>Database design and implementation</li>
-                <li>Systems analysis documentation</li>
-                <li>Information architecture examples</li>
-                <li>Process improvement initiatives</li>
-            </ul>
+                <div>
+                    <h3>Information Analysis Portfolio</h3>
+                    <ul>
+                        <li>Research projects and methodologies</li>
+                        <li>Database design and implementation</li>
+                        <li>Systems analysis documentation</li>
+                        <li>Information architecture examples</li>
+                        <li>Process improvement initiatives</li>
+                    </ul>
+                </div>
 
-            <h3>General Information Portfolio</h3>
-            <ul>
-                <li>Academic and personal projects</li>
-                <li>Problem-solving examples</li>
-                <li>Technical writing samples</li>
-                <li>Collaborative project contributions</li>
-                <li>Leadership and initiative examples</li>
-            </ul>
+                <div>
+                    <h3>General Information Portfolio</h3>
+                    <ul>
+                        <li>Academic and personal projects</li>
+                        <li>Problem-solving examples</li>
+                        <li>Technical writing samples</li>
+                        <li>Collaborative project contributions</li>
+                        <li>Leadership and initiative examples</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>Portfolio Building Steps</h2>
             <ol>
-                <li><strong>Audit Your Work:</strong> Collect all projects, assignments, and experiences that demonstrate your skills</li>
-                <li><strong>Choose Your Best Work:</strong> Select 3-5 high-quality pieces that showcase different skills and approaches</li>
-                <li><strong>Document Your Process:</strong> For each piece, explain your approach, challenges, and solutions</li>
-                <li><strong>Choose a Platform:</strong> Select a website builder or create a custom site to host your portfolio</li>
-                <li><strong>Design for User Experience:</strong> Make your portfolio easy to navigate and visually appealing</li>
-                <li><strong>Write Compelling Descriptions:</strong> Tell the story behind each project with clear, engaging explanations</li>
-                <li><strong>Get Feedback:</strong> Ask peers, professors, and career coaches to review your portfolio</li>
+                <li><strong>Audit Your Work:</strong> Collect all projects, assignments, and experiences that
+                    demonstrate your skills</li>
+                <li><strong>Choose Your Best Work:</strong> Select 3-5 high-quality pieces that showcase different
+                    skills and approaches</li>
+                <li><strong>Document Your Process:</strong> For each piece, explain your approach, challenges, and
+                    solutions</li>
+                <li><strong>Choose a Platform:</strong> Select a website builder or create a custom site to host your
+                    portfolio</li>
+                <li><strong>Design for User Experience:</strong> Make your portfolio easy to navigate and visually
+                    appealing</li>
+                <li><strong>Write Compelling Descriptions:</strong> Tell the story behind each project with clear,
+                    engaging explanations</li>
+                <li><strong>Get Feedback:</strong> Ask peers, professors, and career coaches to review your portfolio
+                </li>
                 <li><strong>Keep It Updated:</strong> Regularly add new work and remove outdated pieces</li>
             </ol>
         </section>
@@ -155,22 +192,27 @@
             <h2>Portfolio Resources</h2>
             <ul>
                 <li>
-                    <a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0" target="_blank">
+                    <a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0"
+                        target="_blank">
                         UMSI Portfolio Guidelines
-                    </a><br>
-                    Official UMSI recommendations for student portfolios across different specializations.
+                    </a>
+                    <p>
+                        Official UMSI recommendations for student portfolios across different specializations.
                 </li>
                 <li>
                     <a href="https://www.cofolios.com/" target="_blank">
                         Portfolio Examples
-                    </a><br>
-                    Browse successful portfolios from employees at top companies to get inspiration.
+                    </a>
+                    <p>
+                        Browse successful portfolios from employees at top companies to get inspiration.
                 </li>
                 <li>
-                    <a href="https://docs.google.com/document/d/10ftmYAc1vs6yYSIAuGIkAvwC21Z1HDM0WyKTaZZzqUo/edit?tab=t.0" target="_blank">
+                    <a href="https://docs.google.com/document/d/10ftmYAc1vs6yYSIAuGIkAvwC21Z1HDM0WyKTaZZzqUo/edit?tab=t.0"
+                        target="_blank">
                         Portfolio Best Practices
-                    </a><br>
-                    Extra information on what to look out for in your portfolio!
+                    </a>
+                    <p>
+                        Extra information on what to look out for in your portfolio!
                 </li>
             </ul>
         </section>
@@ -178,29 +220,34 @@
         <section>
             <h2>Getting Portfolio Feedback</h2>
             <p>
-                A great portfolio is rarely created in isolation. Getting feedback from multiple perspectives will help you create a stronger, more effective showcase of your work.
+                A great portfolio is rarely created in isolation. Getting feedback from multiple perspectives will help
+                you create a stronger, more effective showcase of your work.
             </p>
-            
+
             <h3>Who to Ask for Feedback</h3>
             <ul>
                 <li><strong>Career Coaches:</strong> Get professional advice on portfolio strategy and presentation</li>
                 <li><strong>Faculty:</strong> Receive academic perspective on your work and technical accuracy</li>
                 <li><strong>Industry Professionals:</strong> Gain insights from practitioners in your target field</li>
                 <li><strong>Peers:</strong> Get honest feedback from classmates and fellow students</li>
-                <li><strong>Alumni:</strong> Learn from graduates who have successfully entered your target industry</li>
+                <li><strong>Alumni:</strong> Learn from graduates who have successfully entered your target industry
+                </li>
             </ul>
 
             <p>
-                Ready for a portfolio review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Schedule a portfolio consultation</a> with a CDO Career Coach to get personalized feedback and guidance.
+                Ready for a portfolio review? <a
+                    href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
+                    target="_blank">Schedule a portfolio consultation</a> with a CDO Career Coach to get personalized
+                feedback and guidance.
             </p>
         </section>
-        
-        <!-- Content generated with assistance from Claude (Anthropic) with the prompt, "create a portfolio development page for UMSI students that covers different types of portfolios (UX design, data science, information analysis), portfolio building steps, platform recommendations, and best practices for showcasing student work to potential employers."
-        Claude. (2025). Claude Sonnet 4 (September 6th, 2025 version) [Large language model]. https://claude.ai -->
+
     </main>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI
+                Career Development Office</a></p>
     </footer>
 </body>
+
 </html>

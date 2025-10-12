@@ -1,0 +1,321 @@
+/* 
+UMSI Career Development Resource Hub
+Mobile-First CSS Design using Grid (no media queries for viewport width)
+*/
+
+/* Ensures consistent box sizing across elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Global body setup for mobile-first layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #00274C;
+    /* UMSI dark blue */
+}
+
+/* Skip link (hidden off-screen until focused for accessibility) */
+.skip a {
+    position: absolute;
+    left: -10000px;
+    top: 0;
+    background-color: #FFCB05;
+    /* Michigan maize */
+    color: #00274C;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* Skip link visible when focused */
+.skip a:focus {
+    left: 10px;
+    top: 10px;
+}
+
+/* Header with centered title and logo */
+header {
+    background-color: #00274C;
+    color: white;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+/* Responsive logo image */
+header img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main site heading */
+header h1 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Navigation area spacing */
+nav {
+    margin: 20px 0;
+}
+
+/* GRID #1: Two-column grid for navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Navigation list item container */
+nav li {
+    margin: 0;
+}
+
+/* Navigation links styled as large touch targets */
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    background-color: #00558C;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Hover and focus states for navigation */
+nav a:hover,
+nav a:focus {
+    background-color: #FFCB05;
+    color: #00274C;
+    border: 3px solid #00274C;
+}
+
+/* Highlights the current active page */
+nav a.current {
+    background-color: #9A3324;
+    border: 3px solid #FFCB05;
+    font-weight: bold;
+}
+
+/* Keeps hover/focus consistent for current page */
+nav a.current:hover,
+nav a.current:focus {
+    background-color: #9A3324;
+    border: 3px solid #FFCB05;
+}
+
+/* Main content container centered with padding */
+main {
+    padding: 20px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Adds spacing between sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Section heading style with UM accent border */
+h2 {
+    color: #00274C;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #FFCB05;
+    padding-bottom: 10px;
+}
+
+/* Subsection heading style */
+h3 {
+    color: #00558C;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Paragraph text spacing */
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* List styling and spacing */
+ul,
+ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+/* List items line spacing */
+li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* Bold text color accent */
+strong {
+    color: #00274C;
+}
+
+/* Standard link color and underline */
+a {
+    color: #00558C;
+    text-decoration: underline;
+}
+
+/* Link hover/focus feedback with visible outline */
+a:hover,
+a:focus {
+    color: #9A3324;
+    background-color: #FFCB05;
+    outline: 3px solid #00274C;
+}
+
+/* GRID #2: Two-column grid for resource cards */
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Card styling for each resource item */
+.resource-grid li {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00558C;
+    margin-bottom: 0;
+}
+
+/* Title links inside resource cards */
+.resource-grid li a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Description text inside resource cards */
+.resource-grid li p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* GRID #3: Two-column layout for portfolio types */
+.portfolio-types-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Portfolio type card container */
+.portfolio-types-grid>div {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-top: 3px solid #00558C;
+}
+
+/* Portfolio type card headings */
+.portfolio-types-grid h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* Subsection headings with maize accent line */
+section>h3 {
+    color: #00558C;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #FFCB05;
+}
+
+/* Responsive images with rounded corners */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Responsive YouTube embeds with UM border */
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #00274C;
+    border-radius: 8px;
+}
+
+/* Consistent footer design across pages */
+footer {
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 40px;
+}
+
+/* Removes default footer paragraph spacing */
+footer p {
+    margin: 0;
+}
+
+/* Footer links styled for high contrast */
+footer a {
+    color: #FFCB05;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Footer link hover/focus feedback */
+footer a:hover,
+footer a:focus {
+    color: white;
+    text-decoration: underline;
+    background-color: #00558C;
+}
+
+/* Global focus outline for accessibility */
+*:focus {
+    outline: 3px solid #FFCB05;
+    outline-offset: 2px;
+}
+
+/* Accessibility: honors user’s reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/*
+Notes:
+Used AI-assisted learning (LLMs) to better understand CSS Grid organization, class organization, accessibility setup, and structuring.
+*/
